@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="res/images/favicon.ico">
+    <link rel="stylesheet" href="style.css">
     <title>My Dashboard</title>
  </head>
 
@@ -14,16 +15,19 @@
 <footer>
     <ul>
         <li>
-            <a href="http://m.inpt.ac.ma/login/index.php" target="_blank" >moodle</a>
+            <a href="http://m.inpt.ac.ma/login/index.php" target="_blank" title="Click to visit moodle" >moodle</a>
         </li>
         <li>
-            <a href="http://m.inpt.ac.ma/login/index.php" target="_blank" >Courses</a>
+            <a href="http://m.inpt.ac.ma/login/index.php" target="_blank" title="Click to visit moodle">Courses</a>
         </li>
     </ul>
 </footer>
 <section>
     <div>
-        <img src="res/images/me.png" width="128" height="128" alt="My picture">
+        <figure>
+            <img src="res/images/me.png" width="128" height="128" alt="My picture">
+            <figcaption>This is me</figcaption>
+        </figure>
     </div>
     <div>
         <ul>
@@ -50,31 +54,54 @@
         <tbody>
         <tr>
             <td>1</td>
-            <td>Agile software development</td>
+            <td><a href="https://en.wikipedia.org/wiki/Agile_software_development" target="_blank" title="Click to visit wikipedia page">Agile software development</a></td>
             <td>fall</td>
             <td>82</td>
         </tr>
         <tr>
             <td>2</td>
-            <td> Systems modelling </td>
+            <td><a href="https://en.wikipedia.org/wiki/Systems_modeling" target="_blank" title="Click to visit wikipedia page">Systems modelling</a></td>
             <td>fall</td>
             <td>85</td>
         </tr>
         <tr>
             <td>3</td>
-            <td> Requirements Engineering </td>
+            <td><a href="https://en.wikipedia.org/wiki/Requirements_engineering" target="_blank" title="Click to visit wikipedia page">Requirements Engineering </a></td>
             <td>fall</td>
             <td>99</td>
         </tr>
         <tr>
             <td>4</td>
-            <td> Human Computer Interaction </td>
+            <td> <a href="https://en.wikipedia.org/wiki/Human%E2%80%93computer_interaction" target="_blank"> Human Computer Interaction </a></td>
             <td>fall</td>
             <td>65</td>
         </tr>
- </tbody>
- </table>
-
+        </tbody>
+        <tfoot>
+            <tr>
+                <td ><strong>Note moyenne</strong></td>
+                <td></td>
+                <td></td>
+                <td><strong>76/100</strong></td>
+            </tr>
+        </tfoot>
+    </table>
 </section>
+
+<form action="">
+    <label for="text">Course Title:</label> <br>
+    <input type="text" placeholder="Course title"><br>
+    <label for="Semester">Semester</label><br>
+    <select name="semester">
+        <option value="fall">Fall</option>
+        <option value="spring">Spring</option>
+    </select><br>
+    <input type="radio" name="attendance" value="virtual"> Virtual attendance <br>
+    <input type="radio" name="attendance" value="physical"> Physical attendance <br>
+    <button>Submit</button>
+
+</form>
+
+
  </body>
 </html>
